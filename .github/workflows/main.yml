@@ -6,6 +6,8 @@ jobs:
     name: test
     steps:
     - uses: actions/checkout@v2
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
     - name: Geth Action
       uses: odanado/geth-action@v0.0.5
     - name: curl
