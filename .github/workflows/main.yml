@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Geth Action
-      uses: odanado/geth-action@v0.0.2
+      uses: odanado/geth-action@v0.0.3
     - name: curl
       run: |
         curl -X POST --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}' ${{ steps.geth.outputs.rpc_url }} -H "Content-Type: application/json"
