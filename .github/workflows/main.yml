@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Geth Action
-      uses: odanado/geth-action@v0.0.7
+      uses: odanado/geth-action@v0.0.8
       id: geth
     - name: curl
       run: |
